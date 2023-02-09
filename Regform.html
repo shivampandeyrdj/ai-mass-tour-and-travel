@@ -1,0 +1,80 @@
+<Html>  
+    <head>   
+    <title>  
+    Registration Page  
+    </title> 
+    <style>
+        #gender{ display: flex;}
+        body{background-image: url(web\ img.jfif);}
+
+    </style>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="layout.css"> 
+    </head>  
+    <body bgcolor="black">  
+    <br>  
+    <br>  
+    <!-- <div id="nav-div"> -->
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <!-- <a href="#news">News</a> --> 
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a class="active" href="Regform.html">Registration form</a>
+            <input type="text" placeholder="Search..">
+          </div> <br><br>
+    <!-- </div> -->
+    <form action="user.php">  
+    <label id="form" > Firstname </label>         
+    <input required type="text" name="firstname" size="15" placeholder="first name"/> <br> <br>  
+    <label required id="form"> Middlename: </label>     
+    <input required type="text" name="middlename" size="15" placeholder="middle name"/> <br> <br>  
+    <label id="form"> Lastname: </label>         
+    <input required type="text" name="lastname" size="15" placeholder="last name"/> <br> <br><br>   
+      
+    <!-- <label>   
+    Course :  
+    </label>   
+    <select>  
+    <option value="Course">Course</option>  
+    <option value="BCA">BCA</option>  
+    <option value="BBA">BBA</option>  
+    <option value="B.Tech">B.Tech</option>  
+    <option value="MBA">MBA</option>  
+    <option value="MCA">MCA</option>  
+    <option value="M.Tech">M.Tech</option>  
+    </select>   -->
+        
+    Gender : Male <input type="radio" name="Gender" id=""> Female <input type="radio" name="Gender">
+    Other <input type="radio" name="Gender">
+    <br>  
+    <br>  
+      
+    <label id="form">   
+    Phone :  
+    </label>  
+    <input type="tel" name="country code"  value="+91" size="2"/>   
+    <input type="text" required  name="phone" max="10" inputmode="numeric"/> <br>  
+      
+    Address 
+    <br>
+    <!-- <textarea cols="80" rows="5" value="address" placeholder="input your complete Address" >  
+    </textarea> -->
+    <textarea name="#" id="#" cols="30" rows="10" placeholder="enter your Address"></textarea>
+    <br>   
+    Email:  
+    <input required type="email" id="email" name="email" placeholder="xyz@gmail.com"/> <br>    
+    <br> <br>  
+    Password:  
+    <input type="Password" id="pass" name="pass"> <br>   
+    <br> <br>  
+    Re-type password:  
+    <input type="Password" id="repass" name="repass"> <br> <br>  
+    <input type="submit" value="Submit"/> 
+    <input type="reset" value="reset form"> 
+    </form>
+    <div id="footer">
+        <footer>footer</footer>
+    </div>  
+    </body>  
+    </html>
